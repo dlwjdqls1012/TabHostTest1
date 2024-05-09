@@ -18,6 +18,7 @@
         </TabWidget>
         <FrameLayout
             android:id="@android:id/tabcontent"
+            android:layout_weight="1"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
             <LinearLayout
@@ -54,6 +55,18 @@
                     android:layout_width="match_parent"
                     android:layout_height="300dp"
                     android:src="@drawable/butterfly2"
+                    android:scaleType="fitXY"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/butterfly3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#FFA5A5"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:src="@drawable/butterfly3"
                     android:scaleType="fitXY"/>
             </LinearLayout>
         </FrameLayout>

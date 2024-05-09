@@ -15,13 +15,17 @@ class MainActivity : TabActivity() {
         tabSpec1.setContent(R.id.butterfly1)
         tabHost.addTab(tabSpec1)
 
-        var tabSpec2 = tabHost.newTabSpec("first").setIndicator("첫번째 탭")
+        var tabSpec2 = tabHost.newTabSpec("second").setIndicator("첫번째 탭")
         tabSpec2.setContent(R.id.butterfly1)
         tabHost.addTab(tabSpec2)
 
-        var tabSpec3 = tabHost.newTabSpec("first").setIndicator("첫번째 탭")
+        var tabSpec3 = tabHost.newTabSpec("third").setIndicator("첫번째 탭")
         tabSpec3.setContent(R.id.butterfly1)
         tabHost.addTab(tabSpec3)
+
+        var tabSpec4 = tabHost.newTabSpec("fourth").setIndicator("첫번째 탭")
+        tabSpec3.setContent(R.id.butterfly3)
+        tabHost.addTab(tabSpec4)
 
         tabHost.currentTab = 1
     }
